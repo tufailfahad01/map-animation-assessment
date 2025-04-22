@@ -1,10 +1,7 @@
-import Image from "next/image";
-import LaunchCard from "./map/_components/LaunchCard/LaunchCard";
+import HomePage from "./home/page";
 
 export default function Home() {
   return (
-
- <LaunchCard/>
- 
+    <HomePage />
   );
 }
