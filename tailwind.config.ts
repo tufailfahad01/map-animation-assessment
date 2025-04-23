@@ -15,7 +15,14 @@ const config: Config = {
     },
     fontFamily: {
       hauora: ["var(--font-hauora)", "sans-serif"],
-    }
+    },
+    screens: {
+      xs: "390px", 
+      sm: "744px",
+      md: "1024px",  
+      lg:"1440px",
+      xl: "2560px", 
+    },
   },
   plugins: [],
 };

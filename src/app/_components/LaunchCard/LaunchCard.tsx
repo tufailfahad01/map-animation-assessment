@@ -1,21 +1,26 @@
 import React from "react";
 
-const LaunchCard = () => {
+type LaunchCardProps = {
+  launchRoute: string;
+  launchDate: string;
+};
+
+const LaunchCard: React.FC<LaunchCardProps> = ({ launchRoute, launchDate }) => {
   return (
-    <div className="w-full max-w-xs sm:max-w-md md:max-w-md lg:max-w-lg bg-[#949494]/[0.02] backdrop-blur-lg text-white p-4 sm:p-6 md:p-8 shadow-lg border-[1px] border-[#94949480] rounded-xl mt-10">
-      <h1 className="text-2xl sm:text-3xl font-extrabold mb-4 text-center">
+    <div className="w-full max-w-[342px] sm:max-w-[358px] md:max-w-[440px] lg:max-w-[532px] bg-[#949494]/[0.02] backdrop-blur-lg text-white p-4 sm:p-6 md:p-8 shadow-lg border-[1px] border-[#94949480] rounded-xl ">
+      <h1 className="text-2xl xs:text-[16px] font-extrabold mb-4 text-center">
         BLACK JET
       </h1>
 
-      <h2 className="font-hauora font-semibold text-[24px] sm:text-[28px] md:text-[32px] leading-[110%] sm:leading-[105%] md:leading-[100%] tracking-normal text-gray-300 mb-2 text-left">
-        Launch Route
+      <h2 className="font-hauora font-semibold text-[16px] sm:text-[24px] md:text-[32px] lg:text-[36px] leading-[110%] sm:leading-[105%] md:leading-[100%] tracking-normal text-gray-300 mb-2 text-left">
+      {launchRoute}
       </h2>
 
-      <p className="font-hauora font-normal text-[16px] sm:text-[18px] leading-[100%] tracking-normal text-[#999999] text-left mb-6">
-        Early 2027
+      <p className="font-hauora font-normal text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px] leading-[100%] tracking-normal text-[#999999] text-left mb-6">
+      {launchDate}
       </p>
 
-      <p className="mb-4 text-left text-sm sm:text-lg  font-bold font-hauora leading-tight">
+      <p className="mb-4 text-left text-[16px] sm:text-[16px] md:text-[18px] lg:text-[20px]  font-bold font-hauora leading-tight">
         <span>
           Do you value your time
           <span className=" text-[#999999]"> and </span>
@@ -23,7 +28,7 @@ const LaunchCard = () => {
         </span>
       </p>
 
-      <p className="mb-3 text-left text-sm sm:text-lg font-normal font-hauora leading-tight">
+      <p className="mb-3 text-left text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-normal font-hauora leading-tight">
         <span className="text-[#999999]">
           {" "}
           Book your flight in seconds and{" "}
@@ -41,22 +46,20 @@ const LaunchCard = () => {
         no drawn out boarding procedures
       </p>
 
-      <p className="mb-4 text-left text-sm sm:text-xl font-medium font-hauora leading-tight ">
+      <p className="mb-4 text-left text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] font-medium font-hauora leading-tight ">
         Regular flights between
       </p>
 
-      <div className="flex justify-center items-center gap-2 flex-wrap">
-        <div className="flex items-center gap-2">
-          <div className="text-white text-xs sm:text-base font-semibold font-hauora leading-tight py-2 px-0.5 sm:px-2 border border-[#7A7A7A]">
+      <div className="flex justify-center items-center flex-wrap">
+        <div className="flex items-center gap-1">
+          <div className="text-white text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px]  font-semibold font-hauora leading-tight py-2 px-0.5 sm:px-2 border border-[#7A7A7A] rounded-[3px]">
             Sydney
-            <span className="text-[#999999]">(Bankstown)</span>
+            <span className="text-[#999999] text-[12px] md:text-[16px] lg:text-[18px]">(Bankstown)</span>
           </div>
-
-          <span className="text-[#999999] text-[20px]">↔</span>
-
-          <div className="text-white text-xs sm:text-base font-semibold font-hauora leading-tight py-2 px-0.5 sm:px-2 border border-[#7A7A7A] rounded-[3px]">
+          <span className="text-[#999999] text-[22px]">↔</span>
+          <div className="text-white text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-semibold font-hauora leading-tight py-2 px-0.5  sm:px-2 border border-[#7A7A7A] rounded-[3px]">
             Melbourne
-            <span className="text-[#999999]">(Essendon)</span>
+            <span className="text-[#999999] text-[12px] md:text-[16px] lg:text-[18px]">(Essendon)</span>
           </div>
         </div>
       </div>
