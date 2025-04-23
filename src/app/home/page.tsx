@@ -35,7 +35,7 @@ const HomePage = () => {
 
           <div className="md:inline-block mt-44 md:mt-0 flex justify-center">
             <div
-              className={!secondComplete ? "translate-y-[-200%]" : "translate-y-0"}
+              className={!secondComplete ? "md:translate-y-[-200%]" : "translate-y-0"}
               style={{ transition: "translate 2s ease-in-out" }}
             >
               <LaunchCard />
