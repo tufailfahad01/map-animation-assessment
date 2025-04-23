@@ -39,16 +39,14 @@ const LaunchCard = () => {
       </p>
       <div className="flex justify-center items-center flex-wrap">
         <div className="flex items-center gap-1">
-          <div className="text-white text-[14px] sm:text-[14px] md:text-[16px] lg:text-[18px]  font-semibold font-hauora leading-tight py-2 px-0.5 sm:px-2 border border-[#7A7A7A] rounded-[3px]">
+          <div className="text-white text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px]  font-semibold font-hauora leading-tight py-2 px-0.5 sm:px-2 border border-[#7A7A7A] rounded-[3px]">
             Sydney
-            <span className="text-[#999999] text-[12px] md:text-[16px] lg:text-[18px]">(Bankstown)</span>
+            <span className="text-[#999999] text-[10px] md:text-[16px] lg:text-[18px]">(Bankstown)</span>
           </div>
-
-          <span className="text-[#999999] text-[20px]">↔</span>
-
-          <div className="text-white text-xs sm:text-base font-semibold font-hauora leading-tight py-2 px-0.5 sm:px-2 border border-[#7A7A7A] rounded-[3px]">
+          <span className="text-[#999999] text-[22px]"> ↔</span>
+          <div className="text-white text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] font-semibold font-hauora leading-tight py-2 px-0.5  sm:px-2 border border-[#7A7A7A] rounded-[3px]">
             Melbourne
-            <span className="text-[#999999] text-[12px] md:text-[16px] lg:text-[18px]">(Essendon)</span>
+            <span className="text-[#999999] text-[10px] md:text-[16px] lg:text-[18px]">(Essendon)</span>
           </div>
         </div>
       </div>
