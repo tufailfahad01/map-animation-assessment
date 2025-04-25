@@ -30,12 +30,10 @@ body {
 @layer utilities {
   .animate-slideLeft {
     animation: slideLeft 0.7s linear forwards;
-      /* animation-delay: 3s; */
   }
 
   .animate-slideLeft-bg {
     animation: slideLeftBg 0.7s linear forwards;
-      /* animation-delay: 3s; */
   }
 
   @keyframes slideLeftBg {
